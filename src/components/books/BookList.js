@@ -15,7 +15,7 @@ function BookList() {
 				if (response.ok) {
 					const json = await response.json();
 					console.log(json);
-					setBooks(json.data);
+					setBooks(json);
 				} else {
 					setError("An error occured");
 				}
